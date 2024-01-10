@@ -29,21 +29,21 @@ end
 
 class CsvRow
     def initialize(headers, row_data)
-      @headers = headers
-      @row_data = row_data
+        @headers = headers
+        @row_data = row_data
     end
   
     def method_missing(name, *args)
-      index = @headers.index(name.to_s)
-      if index
-        @row_data[index]
-      else
-        super
-      end
+        index = @headers.index(name.to_s)
+        if index
+            @row_data[index]
+        else
+            super
+        end
     end
   
     def respond_to_missing?(name, include_private = false)
-      @headers.include?(name.to_s) || super
+        @headers.include?(name.to_s) || super
     end
 end
   
