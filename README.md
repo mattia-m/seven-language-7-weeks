@@ -1,6 +1,6 @@
 # Seven Languages in Seven Weeks Exercises
 
-Welcome to the repository for exercises from the book "Seven Languages in Seven Weeks"! This repository contains my solutions and notes as I work through the book, exploring the following seven programming languages:
+This repository contains my solution for the exercises from the book "Seven Languages in Seven Weeks"! 
 
 1. **Ruby**
 2. **Io**
@@ -10,7 +10,7 @@ Welcome to the repository for exercises from the book "Seven Languages in Seven 
 6. **Clojure**
 7. **Haskell**
 
-Each language has its own directory where you can find the exercises and my implementations.
+Each language has its own directory.
 
 ## Purpose
 
@@ -26,13 +26,7 @@ The main goal of this repository is to document my learning journey through thes
 - `/Clojure` - Exercises and notes for Clojure.
 - `/Haskell` - Exercises and notes for Haskell.
 
-## Contributing
-
-While this is a personal project, I'm open to contributions and discussions regarding the exercises and solutions presented here. Feel free to open an issue or pull request if you have suggestions, corrections, or questions.
 
 ## Acknowledgments
 
 - Thanks to Bruce A. Tate for writing "Seven Languages in Seven Weeks," which inspired this repository.
-- Thanks to all contributors and community members who discuss and improve these languages.
-
-Happy Coding!
