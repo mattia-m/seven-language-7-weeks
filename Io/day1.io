@@ -14,3 +14,5 @@ ProgrammingLanguage := Object clone
 ProgrammingLanguage name := "Io"
 ProgrammingLanguage getSlot("name") println
 
+#this creates a new "Type" as per convention instances begin with a lowercase letter and Types with a capital one
+#as we can see everything has to inherit from Object
