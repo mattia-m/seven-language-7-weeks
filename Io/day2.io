@@ -30,3 +30,39 @@ result1 := 10 %% 5  // Should perform normal division and return 2
 "Results:"
 result println
 result1 println
+
+# write a program to add up all the numbers in a 2-dimensional array
+
+sum2DArray := method(array,
+    sum := 0
+    array foreach(row, 
+        row foreach(element, 
+            sum = sum + element
+        )
+    )
+    sum
+)
+
+twoDimensionalArray := list(
+    list(1, 2, 3),
+    list(4, 5, 6)
+)
+
+totalSum := sum2DArray(twoDimensionalArray)
+("Total Sum: " .. totalSum) println
+
+# add a slot called my average to the list prototype
+
+List myAverage := method(
+    sum := 0
+    self foreach(element, sum = sum + element)
+    sum / self size
+)
+
+// Example usage
+myList := list(1, 2, 3, 4, 5)
+avg := myList myAverage
+("Average: " .. avg) println
+
+myList1 := list("a")
+avg1 := myList1 myAverage
