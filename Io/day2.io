@@ -59,10 +59,32 @@ List myAverage := method(
     sum / self size
 )
 
-// Example usage
 myList := list(1, 2, 3, 4, 5)
 avg := myList myAverage
 ("Average: " .. avg) println
 
-myList1 := list("a")
-avg1 := myList1 myAverage
+#write a prototype for a 2d list 
+TwoDList := List clone do(
+    // Initialization method for a list of list
+    dim := method(rows, columns, 
+        for(row, 0, rows - 1, 
+            self append(List with(columns, 0))
+        )
+        self
+    )
+
+    set := method(rowIndex, columnIndex, value,
+        self at(rowIndex) atPut(columnIndex, value)
+    )
+
+    get := method(rowIndex, columnIndex,
+        self at(rowIndex) at(columnIndex)
+    )
+)
+
+my2DList := TwoDList dim(3, 3)  // Initialize a 3x3 2D list
+my2DList set(0, 0, 1)  // Set element at row 0, column 0 to 1
+value := my2DList get(0, 0)  // Get the element at row 0, column 0
+
+// Print the value
+("value at (0, 0): " .. value) println
