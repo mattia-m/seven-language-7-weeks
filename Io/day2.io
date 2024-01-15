@@ -88,3 +88,5 @@ value := my2DList get(0, 0)  // Get the element at row 0, column 0
 
 // Print the value
 ("value at (0, 0): " .. value) println
+
+#exercises 6 (bonus) 7 and 8 missing yet
