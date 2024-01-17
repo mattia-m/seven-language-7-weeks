@@ -18,3 +18,5 @@ Builder := Object clone do (
 
 Builder ul(
     li("foo"))
+
+# other 3 exercises missing (eventually)
