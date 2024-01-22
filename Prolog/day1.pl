@@ -28,4 +28,4 @@ publishers_of_author(Author, Publishers) :-
     list_to_set(PublishersList, Publishers).
 
 % i have to interrogate my knowledge base by doing
-$ books_by_author(palahniuk, Books).
+% books_by_author(palahniuk, Books).
